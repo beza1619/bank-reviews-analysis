@@ -1,11 +1,5 @@
 # Bank Mobile App Reviews Analysis
 
-## Project Overview
-This project analyzes customer satisfaction with mobile banking apps for three Ethiopian banks:
-- Commercial Bank of Ethiopia (CBE)
-- Bank of Abyssinia (BOA) 
-- Dashen Bank
-
 ## Business Objective
 Omega Consultancy is supporting banks to improve their mobile apps to enhance customer retention and satisfaction by analyzing user reviews from Google Play Store.
 
@@ -22,36 +16,24 @@ bank-reviews-analysis/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
+## Current Status
+- ✅ **Task 1**: Data Collection & Preprocessing (Complete)
+- ✅ **Task 2**: Partial Sentiment & Thematic Analysis
+- 🚧 **Task 3**: Database Implementation (In Progress)
+
 ## Data Collection
 - **Source**: Google Play Store
 - **Total Reviews**: 1,200+ (400+ per bank)
-- **Data Points**: Review text, rating, date, bank, source
-- **Time Period**: Recent user reviews
+- **Banks**: CBE, BOA, Dashen Bank
+- **Average Ratings**: CBE (4.18), BOA (4.13), Dashen (4.01)
 
-## Analysis Features
-1. **Sentiment Analysis**: Positive/Negative/Neutral classification using distilbert model
-2. **Thematic Analysis**: Identifying common topics and issues (Login, Transactions, Performance, etc.)
-3. **Rating Distribution**: Star rating analysis per bank
-4. **Trend Analysis**: Review patterns over time
+## Technologies
+- Python, Transformers, spaCy, PostgreSQL
+- Google Play Scraper for data collection
 
-## Technologies Used
-- Python 3.x
-- Google Play Scraper
-- Transformers (Hugging Face) for sentiment analysis
-- spaCy for NLP processing
-- pandas for data manipulation
-- PostgreSQL for data storage
-
-## Installation & Setup
-```bash
-# Install dependencies
+## Usage
+bash
 pip install -r requirements.txt
-
-# Run data collection
 python scrape_reviews.py
-
-# Preprocess data
 python preprocess.py
-
-# Analyze sentiment and themes
 python sentiment_analysis.py
