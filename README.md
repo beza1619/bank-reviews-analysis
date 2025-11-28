@@ -1,39 +1,18 @@
-# Bank Mobile App Reviews Analysis
-
-## Business Objective
-Omega Consultancy is supporting banks to improve their mobile apps to enhance customer retention and satisfaction by analyzing user reviews from Google Play Store.
-
-## Project Structure
-bank-reviews-analysis/
-â”œâ”€â”€ scrape_reviews.py # Web scraping script
-â”œâ”€â”€ preprocess.py # Data preprocessing
-â”œâ”€â”€ sentiment_analysis.py # Sentiment & theme analysis
-â”œâ”€â”€ find_apps.py # App ID discovery
-â”œâ”€â”€ database_setup.py # Database implementation
-â”œâ”€â”€ bank_reviews_clean.csv # Cleaned dataset (1200+ reviews)
-â”œâ”€â”€ bank_reviews_analyzed_sample.csv # Sentiment analysis sample
-â”œâ”€â”€ bank_reviews_with_themes.csv # Thematic analysis
-â”œâ”€â”€ requirements.txt # Python dependencies
-â””â”€â”€ README.md # This file
-
-## Current Status
-- âœ… **Task 1**: Data Collection & Preprocessing (Complete)
-- âœ… **Task 2**: Partial Sentiment & Thematic Analysis
-- ðŸš§ **Task 3**: Database Implementation (In Progress)
-
-## Data Collection
-- **Source**: Google Play Store
-- **Total Reviews**: 1,200+ (400+ per bank)
-- **Banks**: CBE, BOA, Dashen Bank
-- **Average Ratings**: CBE (4.18), BOA (4.13), Dashen (4.01)
-
-## Technologies
-- Python, Transformers, spaCy, PostgreSQL
-- Google Play Scraper for data collection
-
-## Usage
-bash
-pip install -r requirements.txt
-python scrape_reviews.py
-python preprocess.py
-python sentiment_analysis.py
+# Bank Mobile App Reviews Analysis 
+ 
+## Business Objective 
+Omega Consultancy is supporting banks to improve their mobile apps to enhance customer retention and satisfaction by analyzing user reviews from Google Play Store. 
+ 
+## Project Structure 
+\`\`\` 
+bank-reviews-analysis/ 
+ÃÄÄ scrape_reviews.py          # Web scraping script 
+ÃÄÄ preprocess.py              # Data preprocessing 
+ÃÄÄ find_apps.py               # App ID discovery 
+ÃÄÄ database_setup.py          # Database implementation 
+ÃÄÄ bank_reviews_clean.csv     # Cleaned dataset (1200+ reviews) 
+ÃÄÄ bank_reviews_analyzed_sample.csv # Sentiment analysis sample 
+ÃÄÄ bank_reviews_with_themes.csv     # Thematic analysis 
+ÃÄÄ requirements.txt           # Python dependencies 
+ÀÄÄ README.md                  # This file 
+\`\`\` 
